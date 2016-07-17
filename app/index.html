@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+</head>
+<!--   <body ng-controller="HomeController">
+  <h1>{{message}}</h1> -->
+  <body>
+    <div ng-controller="surflineController">
+      <h1>Surfline</h1>
+      <p>{{range}}</p>
+    </div>
+    <div ng-controller="mswController">
+      <h1>MSW</h1>
+      <p>{{lrange.swell.minBreakingHeight}}-{{lrange.swell.maxBreakingHeight}} ft</p>
+    </div>
+    <div ng-controller="wbliveController">
+    <h1>WBLive</h1>
+    
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
